@@ -8,7 +8,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 @Configuration
-class DirectorySecurityConfig extends WebSecurityConfigurerAdapter {
+public class DirectorySecurityConfig extends WebSecurityConfigurerAdapter {
     private final PersonRepository personRepository;
 
     public DirectorySecurityConfig(PersonRepository personRepository) {
